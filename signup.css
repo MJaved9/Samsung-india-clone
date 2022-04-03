@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+ }
+ #container{
+      width:100%;
+      background-color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      height: 1070px;
+ }
+ #head{
+     
+      width:100%;
+      padding: 40px;
+      background-color: white;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+
+ }
+ #center{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width:50%;
+    padding-bottom: 100px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    border-radius: 30px;
+    background-color:white;
+}
+#bottom{
+    width:100%;
+    height: 90px;
+    background-color: whitesmoke; 
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#footerleft{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#footerleft>a{
+    color: rgb(97, 96, 96);
+    text-decoration: none;
+    padding: 10px;
+}
+#footerright{
+    height: 90px;
+    display:flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-start;
+}
+
+#center>p{
+    color: rgba(36, 82, 207, 0.774);
+    margin-top: 10%;
+    font-size: 46px;
+    text-align: center;
+    width: 80%;
+    font-weight: lighter;
+    margin-left: 10%;
+ }
+#input{
+    width:80%;
+    margin: auto;
+    margin-top: 70px;
+}
+input{
+    display: block;
+    margin-bottom: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 45px;
+    width: 100%;
+    font-size: 17px;  
+}
+#sign{
+    width:52%;
+    height:48px;
+    border-radius: 30px;
+    margin-left: 20%;
+    margin-top: 6%;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+   border: none;
+}
+#sign:hover{
+    cursor: pointer;
+}
+#gmail{
+ background-color:  rgb(0, 110, 255);
+ display: flex;
+ margin: auto;
+ margin-top: 60px;
+ width:52%;
+ height:35px;
+ border-radius: 30px;
+ margin-left: 20%;
+ margin-top: 6%;
+ border: none;
+ font-size: 15px;
+ font-weight: 600;
+ padding: 5px;
+ color: white;
+ font-weight: 700;
+ 
+}
+#qrcode{
+    background-color:  rgb(0, 110, 255);
+    display: flex;
+    margin: auto;
+    margin-top: 60px;
+    width:53%;
+    height:35px;
+    border-radius: 30px;
+    margin-left: 20%;
+    margin-top: 6%;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+    color: white;
+    font-weight: 700;
+   }
+#gmail:hover{
+    cursor: pointer;
+}
+#qrcode:hover{
+    cursor: pointer;
+}
+.small{
+    border-radius: 50%;
+    height: 35px;
+}
+ #reset{
+     color: rgb(80, 79, 79) ;
+     margin-left: 26px;
+     margin-top: 2%;
+     display:flex;
+     margin-top: 6%;
+     margin-left:20%;
+ }
+ #reset>a{
+     color:rgb(80, 79, 79) ;
+     font-weight: 600;
+ }
+#creat{
+    display: flex;
+    margin-left: 20%;
+    margin-top: 3%;
+    color: rgb(80, 79, 79);
+    font-weight: 600
+}
+
+#footerright{
+    background-color: whitesmoke;
+    display: flex;
+    margin-bottom:20px;
+}
+#footerleft{
+height: 90px;
+margin-left: 100px;
+
+}
+#footerleft>a{
+    margin-top:-19px;
+   font-size: 13px;
+}

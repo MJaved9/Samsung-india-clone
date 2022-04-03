@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo>a>img {
+    width: 130px;
+}
+
+#navigation {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navigation>ul {
+    display: flex;
+
+}
+
+#navigation>ul>li {
+    position: relative;
+}
+
+#navigation>ul>li>a {
+    padding: 10px;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+#navigation>ul>li>a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+
+}
+
+#support-cart-login {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#support-cart-login>#explore-suppport-offer-buisness>ul {
+    display: flex;
+
+}
+
+#explore-suppport-offer-buisness>ul>li>a {
+    color: black;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#explore-suppport-offer-buisness>ul>li>a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+#cart-login-user>a>i {
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+}
+
+.drop_down {
+    position: relative;
+    left: 0;
+}
+
+.menu {
+    position: absolute;
+    padding-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    left: 0;
+
+}
+
+.left>a {
+    color: black;
+    font-size: 30px;
+    line-height: 2;
+}
+
+.left>a:hover {
+    text-decoration: underline;
+}
+
+.left>ul>li {
+    margin-left: -40px;
+}
+
+.left>ul>li>a {
+    color: rgb(54, 54, 54);
+    line-height: 2.2;
+    font-size: 20px;
+}
+
+.left>ul>li>a:hover {
+    color: black;
+}
+
+.image>img {
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 80px;
+}
+
+.image>img:hover {
+    -webkit-transform: scale(1.05);
+}
+
+.image {
+    border-left: 1px solid black;
+
+}
+
+.right {
+    width: 45%;
+}
+
+.left {
+    width: 45%;
+}
+
+.right>a>h3 {
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+}
+
+.right>a {
+    text-align: center;
+}
+
+.right>a>p {
+    color: black;
+    margin-top: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#middle {
+    margin-top: 40px;
+    width: 100%;
+}
+
+#up>h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#middle-menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#middle-menu>a {
+    padding: 20px;
+    font-weight: bold;
+}
+
+#middle-menu>a:hover {
+    color: rgb(88, 85, 85);
+}
+
+#middle-menu-content {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+#fst{
+    width: 50%;
+}
+#fst>img{
+    width: 100%;
+}
+#sec{
+    width: 48%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+#sec>div>img{
+    border-radius: 30px;
+    width: 100%;
+}
+#middle-menu-content>div>img {
+    border-radius: 30px;
+}
+
+#middle-menu-content>div>img:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+    cursor: pointer;
+}
+#sec>div>img:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+    cursor: pointer;
+}
+#mid-sec{
+    margin-top: 40px;
+}
+#mid-sec-content{
+    text-align: center;
+    margin-top: 15px;
+}
+#mid-sec-content>a{
+    padding: 15px;
+    font-weight: bold;
+}
+#mid-sec-img{
+   margin-top: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+#mid-sec-img>img{
+    
+}
+.btn6:hover{
+cursor: pointer;
+color: red;
+}
+#mid-sec1{
+    background-image: url("https://images.samsung.com/is/image/samsung/assets/in/8004_Neo-QLED-Home-Page-Banners_1440x810.jpg?$1440_810_JPG$");
+    width: 100%;
+    height: 800px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav2{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+}
+#mid-sec1-navigation>a{
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+#mid-sec3{
+    width: 100%;
+    height: 800px;
+    background-image: url("https://images.samsung.com/is/image/samsung/assets/in/9938_Bespoke_Banner_1440x810_1029.jpg?$1440_810_JPG$");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#mid-sec3-nav{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#mid-sec3-nav-navigation{
+    padding: 15px;
+}
+#mid-sec3-nav-navigation>a{
+    padding: 15px;
+    font-weight: bold;
+}
+#mid-sec3-nav-navigation>a:hover{
+    border-radius: 30px;
+    background-color: rgb(126, 125, 125);
+    color: white;
+}
+#mid-sec3-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#mid-sec4{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+#image-cursol{
+    width: 48%;
+    height: 500px;
+}
+#mid-sec4-content{
+    width: 46%;
+    height: 500px;
+}
+#image-cursol>img{
+    border-radius: 20px;
+}
+#image-cursol>img:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#mid-sec4-content>h3{
+    font-size: 30px;
+    line-height: 3.4;
+}
+#mid-sec4-content>h3:hover{
+    border-bottom: 2px solid black;
+}
+body{
+    overflow-x: hidden;
+}

@@ -1,0 +1,40 @@
+@media all and (max-width:1365px) {
+    #navigation{
+        display: none;
+    }
+    #explore-suppport-offer-buisness{
+        display: none;
+    }
+    #support-cart-login{
+        justify-content: right;
+    }
+    #user{
+        display: none;
+    }
+   
+}
+@media all and (min-width:1365px){
+    #menu{
+        display: none;
+    }
+}
+@media all and (max-width:905px){
+    #navbar{
+        justify-content: space-around;
+    }
+}
+@media all and (max-width:350px){
+#support-cart-login{
+    display: none;
+}
+#logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#logo>a>img{
+    width: 150px;
+}
+
+}
