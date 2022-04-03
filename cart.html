@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung India</title>
+    <link rel="stylesheet" href="css\navbar Css\index.css">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx2omzBLOAXaoMkzVgriOqDV2GOJys-KFmAQ&usqp=CAU"
+        type="image/icon type">
+    <link rel="stylesheet" href="css\navbar Css\media.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <style>
+        #cuopon {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            justify-content: space-around;
+        }
+
+        #cuopon>button {
+            margin: auto;
+        }
+
+        #cuopon>div>:nth-child(1) {
+            background-color: #c9def1;
+            border: -1.0px;
+            padding: 10px 30px 10px 30px;
+        }
+
+        #cuopon>div>button {
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            /* font-weight: bold; */
+            border: none;
+            border-radius: 20px;
+        }
+
+        #cuopon>div>button:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.548);
+        }
+
+        #cart_card {
+            display: block;
+            justify-content: space-around;
+
+            width: 45%;
+        }
+
+        #cart_card>div>img {
+            width: 150px;
+        }
+
+        #cart_card>div {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        strike {
+            margin-left: 40px;
+        }
+
+        #cart_card>div>div>button {
+            font-size: 15px;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border: 0.5px solid gray;
+            border-radius: 30px;
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        #cart_card>div>div>p {
+            line-height: 1.5;
+            font-size: 18px;
+        }
+
+        #cart_card>div>div>button:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.286);
+            color: black;
+        }
+
+        #main {
+            display: flex;
+            margin-top: -10%;
+            gap: 20px;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #pay {
+            width: 300px;
+            height: 250px;
+            padding: 40px;
+            display: flex;
+            font-size: 20px;
+            line-height: 1;
+
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: #F7F7F7;
+            border-radius: 20px;
+            flex-direction: column;
+        }
+
+        #total_price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid gray;
+            margin-bottom: 20px;
+            line-height: 1.7;
+            padding-bottom: 20px;
+        }
+
+        #after_disc>div {
+            display: flex;
+            justify-content: space-between;
+            line-height: 1.7;
+        }
+
+        #pay-now {
+            width: 80%;
+            height: 40px;
+            margin: auto;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 10%;
+        }
+
+        #pay-now:hover {
+            background-color: rgba(0, 0, 0, 0.527);
+            cursor: pointer;
+        }
+
+        #apply_coupn {
+            font-size: 15px;
+            border: 1px solid gray;
+            border-radius: 20px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="image\samsung_logo-removebg-preview.png" alt=""></a>
+        </div>
+        <div id="navigation">
+            <ul>
+                <li><a href="mobile.html">Mobile</a></li>
+                <li class="drop_down"><a href="TVandAV.html">TV & AV</a></li>
+                <li><a href="homeapplinces.html">Home Applincess</a></li>
+                <li><a href="laptop.html">Laptop & Monitor</a></li>
+                <li><a href="display.html">Display</a></li>
+                <li><a href="offer.html">Offer</a></li>
+            </ul>
+        </div>
+        <div id="support-cart-login">
+            <div id="explore-suppport-offer-buisness">
+                <ul>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="forbuisness.html">For Buisness</a></li>
+                </ul>
+            </div>
+            <div id="cart-login-user">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a id="user" href=""><i class="fa-solid fa-user"></i></a>
+                <a id="menu" href="navigationlink.html"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Cupon Sec -->
+    <div id="cuopon">
+        <div></div>
+        <div>
+            <input id="apply_coupn" type="text" placeholder="Eneter Coupon Code">
+            <button id="apply">Apply</button>
+        </div>
+        <div> </div>
+        <div></div>
+
+    </div>
+    <div id="main">
+        <div id="cart_card">
+
+        </div>
+        <!-- ***********total payment*********** -->
+        <div id="pay">
+            <div id="total_price">
+                <p>Total Price</p>
+                <p id="total_amount">0.00</p>
+            </div>
+            <div id="after_disc">
+                <div>
+                    <p>Subtotal</p>
+                    <p id="sub_total">0.00</p>
+                </div>
+                <div>
+                    <p>Discount</p>
+                    <p id="discount">0.00</p>
+                </div>
+                <div>
+                    <p>Shiping fees</p>
+                    <p>0.00</p>
+                </div>
+                <div>
+                    <p>Estimated GST</p>
+                    <p>51</p>
+                </div>
+                <button onclick="go_to_payment()" id="pay-now">Pay Now</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--cupon end  -->
+
+
+</body>
+
+</html>
+
+
+<script>
+    var from_local = JSON.parse(localStorage.getItem("cart_ele"))
+    var total = from_local.reduce(function (sum, ele, i, arr) {
+        return sum + (ele.price)
+    }, 0);
+    document.querySelector("#total_amount").innerText = total;
+    document.querySelector("#apply").addEventListener("click", discount);
+
+    function discount() {
+        event.preventDefault();
+        var cp_data = document.querySelector("#apply_coupn").value;
+        var data = ["satyam30", "javed30", "dibas30", "poonam30", "surya30"];
+        if (document.querySelector("#sub_total").innerText != 0.00) {
+            alert("Only one coupon can be applied");
+        } else {
+            for (var i = 0; i < data.length; ++i) {
+                if (cp_data == data[i]) {
+                    document.querySelector("#discount").innerText = (total * 30) / 100;
+                    total = total - ((total * 30) / 100);
+                    document.querySelector("#sub_total").innerText = total;
+                    break;
+                }
+            }
+        }
+
+
+
+    }
+    function go_to_payment(){
+        window.location.href="payment.html";
+    }
+    var len = from_local.length;
+    //  document.querySelector("h2").innerText=`Total prize of Your  ${len}  iteams in cart   ${total}`;
+
+    // var div1=document.createElement("div");
+    // c1=document.createElement("h2");
+    // c1.innerText="Total"
+    // c2=document.createElement("h2");
+    // c2.innerText="₹"+total;
+    // div1.append(c1,c2)
+    // document.querySelector("#pay").append(div1)
+    display(from_local)
+
+    function display(from_local, elem) {
+        document.querySelector("#cart_card").innerHTML = null;
+        from_local.map(function (ele, i, arr) {
+
+
+
+
+            var div = document.createElement("div")
+            var img = document.createElement("img")
+            img.src = ele.Image;
+
+            var div2 = document.createElement("div")
+            var div3 = document.createElement("div")
+            p1 = document.createElement("p");
+            p1.innerText = ele.name;
+            div2.append(p1)
+            p2 = document.createElement("p");
+            p2.innerText = ele.price
+            st = document.createElement("strike");
+            st.innerText = ele.stockprice;
+            best = document.createElement("p");
+            best.innerText = ele.buy_best;
+            cash = document.createElement("p");
+            cash.innerText = ele.cashback;
+            p2.append(st)
+            var btn = document.createElement("button");
+            var btn2 = document.createElement("button");
+            btn.innerText = "Remove";
+            btn2.innerText = "Add";
+            btn.addEventListener("click", function () {
+                remov_iteam(ele, i)
+            })
+            div3.append(p1, p2, best, cash, btn, btn2)
+
+
+            div.append(img, div3)
+            document.querySelector("#cart_card").append(div)
+
+
+        })
+
+    }
+
+    function remov_iteam(elem, i) {
+        event.preventDefault();
+        document.getElementById("cart_card").innerHTML = "";
+        from_local.splice(i, 1)
+        localStorage.setItem("cart_ele", JSON.stringify(from_local))
+        display(from_local)
+        window.location.reload();
+
+    }
+</script>

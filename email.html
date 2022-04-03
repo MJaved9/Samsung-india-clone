@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body{
+            margin:0;
+        }
+
+        /* Medium screens - take min width and max width according to your screen sizes */
+      @media all and (min-width: 401px) and (max-width: 720px) {
+        display: grid;
+        grid gap: 10px;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows:repeat(2);
+
+        margin:auto;
+      }
+
+      /* Small screens - take min width and max width according to your screen sizes */
+
+      @media all and (min-width: 81px) and (max-width: 400px) {
+        display: grid;
+        grid gap: 10px;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows:repeat(1);
+
+        margin:auto;
+
+      }
+
+
+        #top{
+            background-image: url("https://images.samsung.com/is/image/samsung/assets/in/support/email/EmailService_PC.jpg?$1440_N_JPG$");
+            size: cover;
+            height: 50vh;
+            text-align: center;
+            color: aliceblue;
+            margin: 2%;
+            position: relative;
+            
+            
+        }
+        .heading{
+            font-size: 55px;
+            font-weight: bold;
+            font-style: "Roboto";
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform:translate(-50%,-50%)
+        
+        }
+        h2{
+            text-align: center;
+            font-size: 45px;
+        }
+
+        #card{
+        display: grid;
+        grid gap: 15px;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows:repeat(2);
+        margin-left:10%;
+        margin-right:10%;
+        padding: auto;
+        margin-bottom:8%;
+        margin-top:7%;
+
+      }
+      
+      .minicard{
+        height: 38vh;
+        padding: 5px;   
+        width: 75vh;
+        margin-right: 8px;
+        border-radius: 5%;
+        margin-bottom: 7px;
+        text-align: center;
+      }
+      button{
+          border-radius: 40px;
+          background-color: white;
+          padding: 2%;
+          margin-top: 8%;
+          
+      }
+      .bottomcard{
+        height: 38vh;
+        padding: 5px;   
+        width: 50vh;
+        margin-right: 8px;
+        border-radius: 5%;
+        margin-bottom: 7px;
+        text-align: center;
+        border-style: solid ;
+        border-radius: 5%;
+
+      }
+      .bottombutton{
+          background-color: black;
+          color:white;
+      } 
+        .bottomheading{
+            text-align: center;
+            font-size: 48px;
+            margin-top: 5%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="top">
+        <div class="heading">
+           Drop us an e-mail
+        </div>       
+    </div>
+    <div>
+        <h2>Please Select Your Request Type</h2>
+    </div>
+
+    <div id="card">
+
+        <div class="minicard">
+            <div>
+            <img src="https://images.samsung.com/is/image/samsung/assets/in/support/write-to-our-ceo/envelope-icon.png?$ORIGIN_PNG$" />
+            <h3>Customer Service</h3>
+            <p>Get answer for your general & technical queries Such as Service Center location, Samsung Warranty Policy, Product usage tips, Symptom resolution, etc.</p>
+        </div>
+            <div>
+            <button>WHATSAPP US</button>
+            <button>EMAIL US</button>
+        </div>
+        </div>
+
+        <div class="minicard">
+            <div>
+                <img src="https://images.samsung.com/is/image/samsung/assets/in/support/write-to-our-ceo/envelope-icon.png?$ORIGIN_PNG$" />
+            <h3>Email us</h3>
+            <p>Get answer for your general & technical queries Such as Service Center location, Samsung Warranty Policy, Product usage tips, Symptom resolution, etc.</p>
+            </div>
+            <div>
+                <button onclick="display('form')">CONTACT US</button>
+            </div>  
+        </div>       
+    </div>  
+    <div id="form">
+        <h1></h1>
+        </div>
+    
+</body>
+</html>
+

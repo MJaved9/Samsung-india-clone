@@ -1,0 +1,517 @@
+
+/* Slider Css  */
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 11000px;
+position: relative;
+margin: auto;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.text {font-size: 11px}
+
+}
+/* End Slider Css  */
+/* tab collaps css */
+#collaps{
+background-color: #c9def1;
+grid-template-rows: repeat(1,1fr);
+gap: 10px;
+}
+#collaps>a{
+color: black;
+font-size: 20px;
+}
+a{
+color: black;
+}
+button{
+    background-color: #c9def1;
+}
+/* tab end colaps */
+
+/* single colap */
+.collapsible {
+background-color:#c9def1 ;
+color:black;
+
+font-weight: bold;
+padding: 20px;
+width: 90%;
+border: none;
+text-align: center;
+
+font-size: 19px;
+border-radius: 14px;
+margin: auto;
+
+}
+
+
+.content {
+padding: 0 18px;
+display: none;
+overflow: hidden;
+background-color: #f1f1f1;
+position: relative;
+text-align: center;
+}
+
+/* Single colap end */
+
+/* card image for div */
+#container{
+display: grid;
+grid-template-rows: repeat(1,1fr);
+grid-template-columns: repeat(4,1fr);
+justify-content: space-around;
+text-align: center;
+gap: 18px;
+padding: 10px 10px 10px 10px;
+
+}
+#container>div>img{
+width: 70%;
+}
+#container>div:nth-child(1){
+box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+#container>div:nth-child(2){
+box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+#container>div:nth-child(3){
+box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+#container>div:nth-child(4){
+box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+/* card image end */
+/* Navbar css start */
+
+* {
+margin: 0;
+font-family: sans-serif;
+}
+
+#navbar {
+width: 100%;
+height: 90px;
+display: flex;
+justify-content: space-between;
+}
+
+#logo {
+width: 15%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#logo>a>img {
+width: 130px;
+}
+
+#navigation {
+width: 50%;
+height: 100%;
+display: flex;
+justify-content: left;
+align-items: center;
+}
+
+ul {
+list-style: none;
+}
+
+a {
+text-decoration: none;
+}
+
+#navigation>ul {
+display: flex;
+
+}
+
+#navigation>ul>li {
+position: relative;
+}
+
+#navigation>ul>li>a {
+padding: 10px;
+color: black;
+font-size: 13px;
+font-weight: bold;
+transition: color 0.2s;
+}
+
+#navigation>ul>li>a:hover {
+background-color: black;
+color: white;
+border-radius: 20px;
+
+}
+
+#support-cart-login {
+width: 40%;
+height: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+#support-cart-login>#explore-suppport-offer-buisness>ul {
+display: flex;
+
+}
+
+#explore-suppport-offer-buisness>ul>li>a {
+color: black;
+padding: 10px;
+font-size: 13px;
+font-weight: bold;
+}
+
+#explore-suppport-offer-buisness>ul>li>a:hover {
+background-color: black;
+color: white;
+border-radius: 20px;
+}
+
+#cart-login-user>a>i {
+font-size: 20px;
+padding: 10px;
+color: black;
+}
+
+.drop_down {
+position: relative;
+left: 0;
+}
+
+.menu {
+position: absolute;
+padding-top: 60px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+z-index: 1;
+left: 0;
+
+}
+
+.left>a {
+color: black;
+font-size: 30px;
+line-height: 2;
+}
+
+.left>a:hover {
+text-decoration: underline;
+}
+
+.left>ul>li {
+margin-left: -40px;
+}
+
+.left>ul>li>a {
+color: rgb(54, 54, 54);
+line-height: 2.2;
+font-size: 20px;
+}
+
+.left>ul>li>a:hover {
+color: black;
+}
+
+.image>img {
+border-radius: 20px;
+cursor: pointer;
+transition: 0.3s;
+margin-left: 80px;
+}
+
+/* .image>img:hover {
+-webkit-transform: scale(1.05);
+} */
+
+.image {
+border-left: 1px solid black;
+
+}
+
+.right {
+width: 45%;
+}
+
+.left {
+width: 45%;
+}
+
+.right>a>h3 {
+text-align: center;
+color: black;
+margin-top: 10px;
+}
+
+.right>a {
+text-align: center;
+}
+
+.right>a>p {
+color: black;
+margin-top: 10px;
+font-weight: bold;
+text-decoration: underline;
+}
+
+.drop_down:hover .menu {
+display: flex;
+}
+
+/* Nav-bar css end */
+
+/* Card image Css for collaps */
+#container1{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}       
+#container1>div{
+   text-transform: uppercase;
+   text-align: center;
+}
+#container1>div>img{
+    width: 70%;
+    margin: auto;
+}
+#container1>div>button{
+    background-color:blue;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+#container1~div:nth-child(1){
+    background-color: blue;
+}
+
+/* card imgg */
+
+/* footer CSS */
+#footer{
+    margin-top:100px;
+    width: 100%;
+}
+#footer-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footer-input{
+    width: 500px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid  rgb(75, 75, 75);
+}
+#footer-btn{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+#footer-btn>button{
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid  rgb(75, 75, 75);
+    margin: 8px;
+    background-color: white;
+}
+#footer-btn>button:hover{
+    background-color: rgb(192, 185, 185);
+    cursor: pointer;
+}
+#details{
+    width: 50%;
+    margin-top: 80px;
+    margin-left: 10%;
+}
+#details>p{
+    line-height:2;
+    font-size: 13px;
+}
+#links{
+    margin-top: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+}
+#links>div{
+    border: 1px solid rgb(87, 86, 86);
+    border-left: none;
+    padding: 10px;
+}
+#links>div>h3{
+    margin-left: 10%;
+}
+#links>div>a{
+    margin-left: 10%;
+    display: block;
+    font-size: 14px;
+    line-height: 2.2;
+}
+#links>div>a:hover{
+    text-decoration: underline;
+}
+#footer-details{
+    width: 100%;
+    border-bottom: 1px solid rgb(126, 125, 125);
+    
+    padding: 20px;
+}
+#footer-details>p{
+    line-height: 1.2;
+    font-size: 13px;
+}
+#quick-links{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+#left-footer{
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 13px;
+}
+#right-footer>img{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+    filter:grayscale(100%);
+   margin-top: 10px;
+   margin-right: 10px;
+}
+#right-footer>img:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+#left-footer>a:hover{
+    text-decoration: underline;
+}
+
+/* footer css end */
+
+/* refrigarator css */
+#refrigarator{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}       
+#refrigarator>div{
+   text-transform: uppercase;
+   text-align: center;
+}
+#refrigarator>div>img{
+    width: 70%;
+    margin: auto;
+}
+#refrigarator>div>button{
+    background-color:blue;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+#refrigarator~div:nth-child(1){
+    background-color: blue;
+}
+
+
+
+
+#btn-offer{
+    background-color: #c9def1;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+    margin: auto;
+}
+.offer{
+    padding-left: 40px;
+    padding-right: 40px;
+    color: black;
+    font-size: 19px;
+    font-weight: bolder;
+    background-color:#c9def1;
+    text-align: center;
+    margin: auto;
+    border: 0px;
+}
+#refrigarator1{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}       
+#refrigarator>div{
+   text-transform: uppercase;
+   text-align: center;
+}
+#refrigarator>div>img{
+    width: 70%;
+    margin: auto;
+}
+#refrigarator>div>button{
+    background-color:blue;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+#refrigarator~div:nth-child(1){
+    background-color: blue;
+}
+
+/* offer mobile css end */
+
+/* refrigarator css end */
